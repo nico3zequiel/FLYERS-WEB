@@ -4,45 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Flyers Diseno</title>
+    <title>Home</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet/less" type="text/css" href="./styles.less" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&family=Roboto:wght@300&display=swap"
       rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap"
-      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
   </head>
   <body>
     <main>
-      <div class="tituloPrincipal">
-        <h1 class="font">FLYERS DISENO</h1>
+      <div>
+        <a href="./index.html" class="logo"
+          ><img src="./imagenes/PNG2.png" alt=""
+        /></a>
       </div>
-      <!-- INICIO MENU DE NAVEGACION -->
       <header>
         <nav>
-          <ul class="position">
-            <li>
-              <a href="#"
+          <ul class="direction">
+            <li class="position">
+              <a href="./index.html"
                 ><span></span><span></span><span></span><span></span
                 ><span></span>Home</a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="position">
+              <a href="./pages/galery.html"
                 ><span></span><span></span><span></span><span></span
                 ><span></span>Nuestros Trabajos</a
               >
             </li>
-            <li>
-              <a href="#"
+            <li class="position">
+              <a href="./pages/aboutus.html"
                 ><span></span><span></span><span></span><span></span
                 ><span></span>Quienes Somos</a
               >
@@ -54,12 +46,12 @@
       <section class="sectionOne">
         <div>
           <h3>
-            Somos una empresa dedicada al diseño de imagenes y paginas web
-            personalizadas.
+            Somos una empresa dedicada a la creación de imágenes y páginas web.
           </h3>
+          <br />
           <h3>
-            Nuestros diseños son unicos y personalizados para adaptadarse a las
-            necesidades de nuestros clientes.
+            Nuestros diseños son únicos y se adaptan a las necesidades de
+            nuestros clientes.
           </h3>
         </div>
       </section>
@@ -68,7 +60,7 @@
 
       <section class="sectionTwo">
         <div class="tituloPrincipalDos">
-          <h1>ESTOS SON ALGUNOS DE NUESTROS TRABAJOS</h1>
+          <h1 class="neon">Estos son solo algunos de nuestros trabajos</h1>
         </div>
 
         <div class="card-holder">
@@ -109,11 +101,21 @@
         </div>
 
         <div class="container boxModel">
-          <button class="button button-1">ver mas</button>
+          <a href="#"><button class="button button-1">ver mas</button></a>
         </div>
       </section>
-    </main>
 
-    <script src="./app.js"></script>
+      <section class="boxModelDos">
+        <h1 class="neonDos">Tambien podes seguirnos en redes sociales</h1>
+      </section>
+
+      <footer>
+        <div class="footer" style>
+          <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>
+          <a href="#" class="fa fa-instagram"></a>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

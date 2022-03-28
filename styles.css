@@ -1,54 +1,47 @@
-.tituloPrincipal {
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: bold;
-  font-size: 50px;
-  margin-top: 50px;
-  margin-bottom: 55px;
-  letter-spacing: 45px;
-  color: #FFFFFF;
-  text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #00f, 0 0 80px #00f, 0 0 90px #00f, 0 0 100px #00f, 0 0 150px #00f;
-}
-.tituloPrincipalDos {
-  text-transform: uppercase;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  font-weight: bold;
-  font-size: 35px;
-  margin-top: 0px;
-  margin-bottom: 170px;
-  letter-spacing: 10px;
-  color: #FFFFFF;
-  text-shadow: 0 0 5px #FFFFFF, 0 0 10px #FFFFFF, 0 0 20px #FFFFFF, 0 0 40px #FF00DE, 0 0 80px #FF00DE, 0 0 90px #FF00DE, 0 0 100px #FF00DE, 0 0 150px #FF00DE;
-}
-.font {
-  font-family: "Roboto", sans-serif;
-  font-family: "Roboto Condensed", sans-serif;
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v26/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaooCP.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/raleway/v26/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVs9pYCP.ttf) format('truetype');
-}
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
-  color: white;
-  background-color: black;
-  list-style-type: none;
 }
-/* FLYERS DISENO */
+
+body {
+  background-color: rgb(45, 45, 45);
+  color: white;
+  background-image: url(./imagenes/darkbrick.jpg);
+  background-blend-mode: soft-light;
+  background: linear-gradient(rgb 0, 0, 0);
+}
+
+header {
+  margin-bottom: -50px;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* LOGO */
+
+.logo {
+  display: flex;
+  width: 600px;
+  height: 500px;
+  margin-top: -100px;
+}
+
 /* MENU DE NAVEGACION */
+
+.direction {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 .position {
   display: flex;
   justify-content: center;
@@ -56,14 +49,16 @@
   font-family: "Raleway", sans-serif;
   font-weight: bold;
 }
-a {
+
+.position a {
   position: relative;
-  display: inline-block;
+  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   padding: 25px 30px;
   margin: 25px 0;
-  color: #ff31fc;
+  margin-top: -600px;
+  color: #5eff00;
   text-decoration: none;
   text-transform: uppercase;
   transition: 0.5s;
@@ -71,128 +66,80 @@ a {
   overflow: hidden;
   margin-right: 50px;
 }
-a:hover {
-  background: #ff31fb;
+.position a:hover {
+  background: #5eff00;
   color: #050801;
-  box-shadow: 0 0 5px #ff31fb, 0 0 25px #ff31fb, 0 0 50px #ff31fb, 0 0 200px #ff31fb;
+  box-shadow: 0 0 5px #5eff00, 0 0 25px #5eff00, 0 0 50px #5eff00,
+    0 0 200px #5eff00;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
-a:nth-child(1) {
-  filter: hue-rotate(270deg);
-}
-a:nth-child(2) {
-  filter: hue-rotate(110deg);
-}
-a span {
+
+.position a span {
   position: absolute;
   display: block;
 }
-a span:nth-child(1) {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #ff31fb);
-  animation: animate1 1s linear infinite;
-}
-@keyframes animate1 {
-  0% {
-    left: -100%;
-  }
-  50%,
-  100% {
-    left: 100%;
-  }
-}
-a span:nth-child(2) {
-  top: -100%;
-  right: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(180deg, transparent, #ff31fb);
-  animation: animate2 1s linear infinite;
-  animation-delay: 0.25s;
-}
-@keyframes animate2 {
-  0% {
-    top: -100%;
-  }
-  50%,
-  100% {
-    top: 100%;
-  }
-}
-a span:nth-child(3) {
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(270deg, transparent, #ff31fb);
-  animation: animate3 1s linear infinite;
-  animation-delay: 0.5s;
-}
-@keyframes animate3 {
-  0% {
-    right: -100%;
-  }
-  50%,
-  100% {
-    right: 100%;
-  }
-}
-a span:nth-child(4) {
-  bottom: -100%;
-  left: 0;
-  width: 2px;
-  height: 100%;
-  background: linear-gradient(360deg, transparent, #ff31fb);
-  animation: animate4 1s linear infinite;
-  animation-delay: 0.75s;
-}
-@keyframes animate4 {
-  0% {
-    bottom: -100%;
-  }
-  50%,
-  100% {
-    bottom: 100%;
-  }
-}
-/* TEXTO INTRODUCCION */
+
+/* SECCION 1 */
+
 .sectionOne {
   display: grid;
   align-content: center;
   justify-content: center;
-  grid-template-columns: 60%;
-  margin-top: 70px;
-  margin-bottom: 0px;
-  /* background-color: #FF00DE; */
+  grid-template-columns: 90%;
+  margin-top: 1px;
+  margin-bottom: 200px;
 }
-/* .sectionOne div{
-    font-family: 'Roboto Serif', serif;
-    text-align: center;
-    font-size: 20px;
-    height: 100px;
-    width: 100%;
-    
-} */
+
 .sectionOne div h3 {
   font-family: "Raleway", sans-serif;
-  /* letter-spacing: 3px; */
+  letter-spacing: 5px;
   text-align: center;
-  font-size: 25px;
+  font-size: 35px;
   height: 50px;
   width: 100%;
-  background-color: #fe019a;
   padding: 20px;
 }
+
 /* CARDS */
+
 .sectionTwo {
   display: grid;
   grid-template-columns: auto;
   margin-top: 150px;
   margin-bottom: 70px;
 }
+
+.neon {
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 35px;
+  margin-top: 60px;
+  margin-bottom: 170px;
+  letter-spacing: 10px;
+  color: #ff00ff;
+  text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff,
+    0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff, 0 0 100px #ff00ff,
+    0 0 150px #ff00ff;
+}
+
+.neonDos {
+  text-transform: uppercase;
+  /* text-decoration: underline; */
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  letter-spacing: 6px;
+  color: #fbff00;
+  text-shadow: 0 0 5px #fbff00, 0 0 10px #fbff00, 0 0 20px #fbff00,
+    0 0 40px #fbff00, 0 0 80px #fbff00, 0 0 90px #fbff00, 0 0 100px #fbff00,
+    0 0 150px #fbff00;
+}
+
 .card-holder {
   display: flex;
   width: 100%;
@@ -204,26 +151,29 @@ a span:nth-child(4) {
   transform: translate(-50%, -50%);
   justify-content: center;
 }
+
 /* ESTILO PARA IFRAME */
+
 .card img,
 .card iframe {
   width: 100%;
-  border-radius: inherit;
-  /* BORDER RADIUS */
+  border-radius: inherit; /* BORDER RADIUS */
 }
+
 .card.large {
   width: 250px;
   height: 250px;
   z-index: 1000;
   transform: perspective(600px) rotateY(0deg) translateZ(50px);
-  box-shadow: 0px 0px 15px #000000;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 1);
   margin-right: -15px;
 }
+
 .card {
   width: 220px;
   height: 220px;
   display: inline-flex;
-  background: #000000;
+  background: rgb(0, 0, 0);
   border-radius: 20px;
   /* border-radius: 50px 50px 50px 50px; */
   transition: all 0.5s ease;
@@ -231,14 +181,18 @@ a span:nth-child(4) {
   /* box-shadow: 0 18px 31px -8px rgba(0, 0, 0, 0.5); */
   transform: perspective(600px) rotateY(45deg);
 }
+
 .card:hover {
   transform: perspective(600px) rotateY(0deg) translateZ(50px);
   /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 1); */
 }
+
 .card:not(.last):hover {
   margin-right: -15px;
 }
+
 /* BOTON CARDS */
+
 .button {
   width: 170px;
   padding-top: 30px;
@@ -251,22 +205,106 @@ a span:nth-child(4) {
   margin-bottom: 30px;
   cursor: pointer;
   display: inline-block;
+  font-family: "Raleway", sans-serif;
 }
+
 .button-1 {
   background-color: transparent;
-  border: 3px solid #00d7c3;
+  border: 3px solid #5eff00;
   border-radius: 50px;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
   color: #ff00ff;
 }
 .button-1:hover {
-  box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
-  border: 3px solid #00d7c3;
+  box-shadow: 0 0 10px 0 #5eff00 inset, 0 0 20px 2px #5eff00;
+  border: 3px solid #5eff00;
+  /* text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff,
+    0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff, 0 0 100px #ff00ff,
+    0 0 150px #ff00ff; */
 }
+
 .boxModel {
   display: flex;
   align-content: center;
   justify-content: center;
   margin-top: 100px;
+}
+
+.boxModelDos {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* FOOTER */
+
+.footerSpacing {
+  height: 100px;
+  background-color: rgb(0, 0, 0);
+  height: 75px;
+  margin-top: 50px;
+}
+
+.footer {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  padding-left: 0;
+  font-size: 30px;
+}
+
+.footer .fa {
+  padding: 30px;
+  text-decoration: none;
+  background: linear-gradient(
+    to right bottom,
+    rgba(0, 0, 0, 0.863),
+    rgba(255, 255, 255, 0.432)
+  );
+  width: 30px;
+  border-radius: 5rem;
+  text-align: center;
+  box-shadow: inset 2px 1px 3px 1px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.footer .fa:hover {
+  box-shadow: inset 0 0 50px rgb(18, 45, 167),
+    inset 20px 0 80px rgb(44, 62, 224), inset -20px 0 80px rgb(76, 54, 156),
+    inset 20px 0 300px rgb(34, 31, 177), inset -20px 0 300px rgb(128, 113, 170),
+    0 0 50px rgb(37, 27, 172), -10px 0 80px rgb(61, 20, 173),
+    10px 0 80px rgb(100, 96, 141);
+  color: #fff;
+}
+.footer .fa-facebook {
+  color: rgb(44, 62, 224);
+  transition: 0.4s;
+}
+.footer .fa-twitter:hover {
+  box-shadow: inset 0 0 50px rgb(46, 112, 255),
+    inset 20px 0 80px rgb(41, 132, 250), inset -20px 0 80px rgb(131, 174, 223),
+    inset 20px 0 300px rgb(2, 95, 202), inset -20px 0 300px rgb(106, 148, 238),
+    0 0 50px rgb(104, 152, 241), -10px 0 80px rgb(29, 95, 236),
+    10px 0 80px rgb(111, 145, 207);
+  color: #fff;
+}
+.footer .fa-twitter {
+  color: rgb(35, 137, 255);
+  transition: 0.4s;
+}
+.footer .fa-instagram:hover {
+  box-shadow: inset 0 0 50px rgb(223, 32, 32), inset 20px 0 80px rgb(238, 0, 0),
+    inset -20px 0 80px rgb(207, 81, 81), inset 20px 0 300px rgb(218, 23, 23),
+    inset -20px 0 300px rgb(248, 116, 116), 0 0 50px rgb(201, 126, 126),
+    -10px 0 80px rgb(206, 7, 7), 10px 0 80px rgb(218, 68, 68);
+  color: #fff;
+}
+.footer .fa-instagram {
+  color: rgb(238, 0, 0);
+  transition: 0.4s;
 }
